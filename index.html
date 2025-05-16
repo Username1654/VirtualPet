@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="download.jfif">
+</head>
+
+<body>
+    <div id="con">
+        <header id="head" class="lightMode">
+            
+            <h1 id="headText">Virtual Pet:</h1>
+            <p id="name"></p>
+          
+            
+        </header>
+
+        <div id="pet-status" class="lightMode">
+            <br>
+            <p>Coin: $<span id="coin"></span></p>
+            <hr>
+            <!--stats about the pet-->
+            <div id="tex">
+                <p id="pet-happiness">Happiness:</p>
+                <p id="pet-hunger">Hunger: </p>
+                <p id="pet-energy">Energy:</p>
+            </div>
+            <div id="stats">
+            <div id="hap"></div>
+            <div id="hun"></div>
+            <div id="ene"></div>
+            </div>
+            <hr>
+            <p>Age: <span id="age"></span></p>
+            <p>Start Date: <span id="startDate"></span></p>
+            <hr>
+            <br>
+            <!--buttons for pet-->
+            <div id="buttons">
+            <button id="feed" onclick="feed()">Feed</button>
+           
+            <button id="play" onclick="play()">Play</button>
+           
+            <button id="sleep" onclick="sleep()">Sleep</button>
+            </div>
+        </div>
+
+         <!--Middle div, holds the egg and the pet image, pet image src is populated through js-->
+        <div id="pet-image" class="lMid">
+            <img id="egg" src="images/Violet_Easter_Egg_PNG_Clipart.png" alt="egg">
+            <img id="pet" src="" alt="pet">
+        </div>
+
+        <!--Though it says "pet actions" its just regular actions-->
+        <div id="pet-actions" class="lightMode">
+            <img src="images/dark-theme.svg" alt=""  id="ld">
+            <img src="images/shopping-bag.svg" alt=""  id="shopping">
+
+        </div>
+
+
+<!--Shop and inventory area, will show when certain buttons are clicked -->
+        <div id="shop">
+            <h2>Shop!</h2>
+            <input type="text" id="inpu" placeholder="Search for items">
+            <ul id="history"></ul>
+            <div id="ShopF">
+
+            </div>
+        </div>
+
+        <div id="inventory">
+            <h2>What will you feed your pet?</h2>
+            <div id="inv">
+
+            </div>
+        </div>
+
+    </div>
+    <!--Alot of script files to organize-->
+    <script src="js/script.js"></script>
+    <script src="js/age.js"></script>
+    <script src="js/stats.js"></script>
+     <script src="js/shop.js"></script>
+     <script src="js/search.js"></script>
+     <script src="js/movement.js"></script>
+</body>
+
+</html>
