@@ -120,7 +120,7 @@ item1.addEventListener('click', function(){
     inv.innerHTML += `<div class="item" id='carrot${carrot}' onclick='carro(${carrot})'>
     <h3>Carrot</h3> <br>
     <hr> <img src='images/carrots.jpg' width='50px'> 
-    <p>-1 hunger</p>
+    <p>-10 hunger</p>
     </div>`
     }
 })
@@ -134,7 +134,7 @@ item2.addEventListener('click', function(){
     inv.innerHTML += `<div class="item" id='apple${apple}' onclick='appl(${apple})'>
     <h3>Apple</h3> <br>
     <hr> <img src='images/apple.jfif' width='50px'> 
-    <p>-1 hunger</p>
+    <p>-20 hunger</p>
     </div>`
     }
 })
@@ -147,7 +147,7 @@ item3.addEventListener('click', function(){
     inv.innerHTML += `<div class="item" id='orange${orange}' onclick='orang(${orange})'>
     <h3>Orange</h3> <br>
     <hr> <img src='images/orange.webp' width='50px'> 
-    <p>-2 hunger</p>
+    <p>-30 hunger</p>
     </div>`
     }
     
@@ -161,7 +161,7 @@ item4.addEventListener('click', function(){
     inv.innerHTML += `<div class="item" id='blueberry${blueberry}' onclick='blueberr(${blueberry})'>
     <h3>Blueberry</h3> <br>
     <hr> <img src='images/blueberry.jfif' width='50px'> 
-    <p>-4 hunger</p>
+    <p>-50 hunger</p>
     </div>`
     }
     
